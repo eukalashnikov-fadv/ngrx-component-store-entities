@@ -1,0 +1,4 @@
+<div *ngFor="let user of users$ | async">
+  <span>name: {{user.name}}</span>
+  <img [src]="user.avatar" alt="avatar"/>
+</div>
