@@ -1,10 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {UsersStore} from "./users.store";
+import { NgFor, AsyncPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+    selector: 'app-users',
+    templateUrl: './users.component.html',
+    styleUrls: ['./users.component.scss'],
+    standalone: true,
+    imports: [NgFor, AsyncPipe]
 })
 export class UsersComponent implements OnInit {
   public readonly users$ = this.store.users$;

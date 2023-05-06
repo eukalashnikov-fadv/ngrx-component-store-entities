@@ -16,19 +16,17 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    UsersComponent,
-    UserComponent
-  ],
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    RouterModule.forChild(routes),
-    NgOptimizedImage
-  ],
-  providers: [
-    UsersService,
-    UsersStore
-  ]
+    imports: [
+        CommonModule,
+        HttpClientModule,
+        RouterModule.forChild(routes),
+        NgOptimizedImage,
+        UsersComponent,
+        UserComponent
+    ],
+    providers: [
+        UsersService,
+        UsersStore
+    ]
 })
 export class UsersModule { }
