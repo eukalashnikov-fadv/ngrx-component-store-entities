@@ -1,8 +1,8 @@
-import {inject, Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-import {User} from "./model";
-import {Observable} from "rxjs";
+import { User } from './model';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class UsersService {
