@@ -21,8 +21,6 @@ const routes: Routes = [
         HttpClientModule,
         RouterModule.forChild(routes),
         NgOptimizedImage,
-        UsersComponent,
-        UserComponent
     ],
     providers: [
         UsersService,
